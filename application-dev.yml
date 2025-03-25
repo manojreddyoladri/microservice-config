@@ -1,6 +1,13 @@
 spring:
   application:
     name: Config-Dev
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
 eureka:
   instance:
     prefer-ip-address: true
